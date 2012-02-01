@@ -4,10 +4,10 @@ from setuptools import setup, find_packages
 
 setup(
     name='impermium',
-    version='0.4.0',
-    author='David Cramer',
-    author_email='dcramer@gmail.com',
-    url='http://github.com/disqus/impermium-python',
+    version='3.1.i',
+    author='Connie Chen',
+    author_email='connie@livefyre.com',
+    url='http://github.com/conniec/impermium-python',
     description = 'Impermium API bindings for Python',
     packages=find_packages(),
     zip_safe=False,
