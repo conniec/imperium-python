@@ -96,59 +96,10 @@ class ImpermiumAPI(object):
     checkListing = lambda s, *a, **k: s.request('POST', 'listing', *a, **k)
 
     # API 3.1 endpoints
-    def trainAnalyst(self, object_type, analyst_type, *args, **kwargs):
+    def train(self, object_type, analyst_type, *args, **kwargs):
         assert self.version == '3.1'
         return self.request('POST', '%s/%s' % (object_type, analyst_type), *args, **kwargs)
 
-
-
-    # def trainAnalystProfile(self, *args, **kwargs):
-    #     assert self.version == '3.1'
-    #     return self.request('POST', 'profile', 'analyst_feedback', *args, **kwargs)
-    
-    # def trainEnduserProfile(self, *args, **kwargs):
-    #     assert self.version == '3.1'
-    #     return self.request('POST', 'profile', 'user_feedback', *args, **kwargs)
-
-    # def trainAnalystAccount(self, *args, **kwargs):
-    #     assert self.version == '3.1'
-    #     return self.request('POST', 'account', 'analyst_feedback', *args, **kwargs)
-    
-    # def trainEnduserAccount(self, *args, **kwargs):
-    #     assert self.version == '3.1'
-    #     return self.request('POST', 'account', 'user_feedback', *args, **kwargs)
-
-    # def trainAnalystListing(self, *args, **kwargs):
-    #     assert self.version == '3.1'
-    #     return self.request('POST', 'listing', 'analyst_feedback', *args, **kwargs)
-    
-    # def trainEnduserListing(self, *args, **kwargs):
-    #     assert self.version == '3.1'
-    #     return self.request('POST', 'listing', 'user_feedback', *args, **kwargs)
-
-    # def trainAnalystBookmark(self, *args, **kwargs):
-    #     assert self.version == '3.1'
-    #     return self.request('POST', 'bookmark', 'analyst_feedback', *args, **kwargs)
-    
-    # def trainEnduserBookmark(self, *args, **kwargs):
-    #     assert self.version == '3.1'
-    #     return self.request('POST', 'bookmark', 'user_feedback', *args, **kwargs)
-
-    # def trainAnalystComment(self, *args, **kwargs):
-    #     assert self.version == '3.1'
-    #     return self.request('POST', 'comment', 'analyst_feedback', *args, **kwargs)
-
-    # def trainEnduserComment(self, *args, **kwargs):
-    #     assert self.version == '3.1'
-    #     return self.request('POST', 'comment', 'user_feedback', *args, **kwargs)
-
-    # def trainAnalystBlogPost(self, *args, **kwargs):
-    #     assert self.version == '3.1'
-    #     return self.request('POST', 'blog_post', 'analyst_feedback', *args, **kwargs)
-    
-    # def trainEnduserBlogPost(self, *args, **kwargs):
-    #     assert self.version == '3.1'
-    #     return self.request('POST', 'blog_post', 'user_feedback', *args, **kwargs)
 
     # API 3.0 endpoints
     def trainAnalystComment(self, *args, **kwargs):
