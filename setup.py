@@ -4,7 +4,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='impermium',
-    version='3.1.i',
+    version='3.1i',
     author='Connie Chen',
     author_email='connie@livefyre.com',
     url='http://github.com/conniec/impermium-python',
